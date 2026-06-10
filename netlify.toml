@@ -1,0 +1,10 @@
+# Netlify config for the Relay landing page (git-connected deploys).
+# The deployable site lives in the landingpage/ folder — there is no build step.
+# Security + cache headers are defined in landingpage/_headers (Netlify and
+# Cloudflare Pages both read that file, so it is kept as the single source).
+
+[build]
+  publish = "landingpage"
+
+# Pretty 404 fallback is optional; Netlify serves index.html at "/" automatically
+# once landingpage/index.html exists (see DEPLOY.md — rename step).

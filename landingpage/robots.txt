@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Once you have a production domain + sitemap, point crawlers to it:
+# Sitemap: https://relayhandoff.com/sitemap.xml

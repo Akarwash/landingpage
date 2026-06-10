@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+**/.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Scratch / build output
+.dist/
+
+# Local env / secrets (in case a backend is added back later)
+.env
+.env.*
+!.env.example
+*.local

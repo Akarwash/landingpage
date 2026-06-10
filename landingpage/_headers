@@ -1,0 +1,16 @@
+# Response headers for Netlify and Cloudflare Pages.
+# Both platforms read this file from the published directory.
+# Adjust the Content-Security-Policy if you add new third-party scripts/origins.
+
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Content-Security-Policy: default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
+
+# Static assets — cache for a day (bump if you start fingerprinting filenames).
+/relay-styles.css
+  Cache-Control: public, max-age=86400
+/relay-script.js
+  Cache-Control: public, max-age=86400
